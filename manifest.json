@@ -1,0 +1,26 @@
+{
+	"manifest_version": 2,
+  "name": "Focus",
+  "version": "2.1",
+  "description": "Protects you from distracting goofs and gaffs.",
+  "content_scripts": [
+    {
+    	"matches": ["https://www.youtube.com/*"],
+    	"js": ["jquery.min.js", "contexts/youtube.js"],
+    	"css": ["style.css"]
+    },
+    {
+    	"matches": ["https://www.reddit.com/*"],
+    	"js": ["jquery.min.js", "contexts/reddit.js"],
+    	"css": ["style.css"]
+    }
+  ],
+  "icons": {
+  	"16": "images/jslogo.png"
+  },
+  "browser_action": {
+  	"browser_style": true,
+  	"default_title": "Focus",
+  	"default_popup": "popup.html"
+  }
+}
