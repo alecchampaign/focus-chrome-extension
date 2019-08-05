@@ -7,7 +7,11 @@ This chome extension is active on all sites which have associated scripts in the
 
 # Other files
 popup.html: A very simple popup for when the extension is clicked
+
 style.css: Provides styling for injected content
+
 jquery.min.js: Jquery dependency
+
 manifest.json: Manages chrome extension settings
+
 Images folder contains extension icon
